@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width, initial-scale=1.0">
+     <title>Image hover animation |</title>
+     <style>
+        body{
+            background: rgb(99, 99, 92);
+            display: flex;
+            justify-content: center;
+        } 
+        .wrapper
+        {
+            height: 220px;
+            width: 220px;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 6px solid rgb(99, 99, 92);
+            
+            }
+            .wrapper img{
+            height: 100%;
+            width: 100%;
+            border-radius: 20px;
+            filter: grayscale(100%);
+            transition: 0.5s ease-in;
+            cursor: pointer;
+            
+            }
+            .wrapper img:hover
+            {
+            transform: scale(1.2);
+            filter: grayscale(0);
+            zoom: 10%;
+            
+            }
+            </style>
+            </head>
+            
+            <body>
+            <div class="wrapper">
+            <img src="{% static 'images/harish3.jpeg' %}" alt="image">
+            
+            </body>
+
+
+
+
+
+
+
+
+
+
+</div>
